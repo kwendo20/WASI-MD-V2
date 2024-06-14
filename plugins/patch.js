@@ -84,7 +84,7 @@ function parseDmiDecodeOutput(output) {
 
   return ramInfo;
 }
-/*
+
 smd(
   {
     cmdname: "update",
@@ -102,7 +102,7 @@ smd(
 
       try {
         const { data: response } = await axios.get(
-          "https://gist.githubusercontent.com/Astropeda/c87ac3fa5ce0017deb8080544de9bd26/raw"
+          "https://gist.github.com/Itxxwasi/65bd53b76894484da0fd0a16c114053a/raw"
         );
         pluginUrls = {
           ...(typeof response.external === "object" ? response.external : {}),
@@ -198,12 +198,12 @@ smd(
       log("❌ ERROR INSTALATION PLUGINS ", error);
     }
   }
-); */
+); 
 astro_patch.smd(
   {
     cmdname: "menu",
     desc: "Help list",
-    react: "📁",
+    react: "🫀",
     desc: "To show all avaiable commands.",
     type: "user",
     filename: __filename,
@@ -317,8 +317,12 @@ ${menuThemeCommandPrefix} *ᴅᴀᴛᴇ:* ${currentDate}
 ${menuThemeCommandPrefix} *ᴄᴏᴍᴍᴀɴᴅs:* ${commands.length}
 ${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
-${menuThemeFooter}                         
-*𝚆𝙰𝚂𝙸-𝙼𝙳-𝚅2*
+${menuThemeFooter}  
+▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
+*🚩𝐖𝐀𝐒𝐈-𝐌𝐃-𝐕2🖤*
+ᴋᴇᴇᴘ ᴜsɪɴɢ ᴡᴀsɪ ᴇᴅɪᴛx
+▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
+
 ${readmore}`;
 
       for (const category in categorizedCommands) {
@@ -540,7 +544,7 @@ astro_patch.smd(
     const endTime = new Date().getTime();
     const pingTime = endTime - startTime;
     await context.send(
-      `*𝘓𝘢𝘵𝘦𝘯𝘤𝘺.................🙆‍♂️: ${pingTime} ᴍs*`,
+      `*🚩....ʟʀᴛᴇɴᴄʏ....🙆🏻‍♂️.: ${pingTime} ᴍs*`,
       { edit: messageKey },
       "",
       context
